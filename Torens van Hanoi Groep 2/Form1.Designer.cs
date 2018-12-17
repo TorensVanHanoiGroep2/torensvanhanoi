@@ -1,6 +1,6 @@
 ﻿namespace Torens_van_Hanoi_Groep_2
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,176 +28,190 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.forLoopButton = new System.Windows.Forms.Button();
+            this.forLoopTextBox = new System.Windows.Forms.TextBox();
+            this.forLoopLabel = new System.Windows.Forms.Label();
+            this.forLoopGroupBox = new System.Windows.Forms.GroupBox();
+            this.machtsverheffingGroupBox = new System.Windows.Forms.GroupBox();
+            this.machtsverheffingTextBox = new System.Windows.Forms.TextBox();
+            this.machtsverheffingButton = new System.Windows.Forms.Button();
+            this.machtsverheffingLabel = new System.Windows.Forms.Label();
+            this.incursieGroupBox = new System.Windows.Forms.GroupBox();
+            this.RecursieTextBox = new System.Windows.Forms.TextBox();
+            this.IncursieButton = new System.Windows.Forms.Button();
+            this.incursieLabel = new System.Windows.Forms.Label();
+            this.forLoopGroupBox.SuspendLayout();
+            this.machtsverheffingGroupBox.SuspendLayout();
+            this.incursieGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // forLoopButton
             // 
-            this.button1.Location = new System.Drawing.Point(35, 113);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 39);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Bereken";
-            this.button1.UseVisualStyleBackColor = true;
+            this.forLoopButton.Location = new System.Drawing.Point(47, 139);
+            this.forLoopButton.Margin = new System.Windows.Forms.Padding(4);
+            this.forLoopButton.Name = "forLoopButton";
+            this.forLoopButton.Size = new System.Drawing.Size(201, 48);
+            this.forLoopButton.TabIndex = 0;
+            this.forLoopButton.Text = "Bereken";
+            this.forLoopButton.UseVisualStyleBackColor = true;
+            this.forLoopButton.Click += new System.EventHandler(this.forLoopButton_Click);
             // 
-            // textBox1
+            // forLoopTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(151, 20);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.Text = "Vul hier het aantal schijven in";
+            this.forLoopTextBox.Location = new System.Drawing.Point(47, 39);
+            this.forLoopTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.forLoopTextBox.Name = "forLoopTextBox";
+            this.forLoopTextBox.Size = new System.Drawing.Size(200, 22);
+            this.forLoopTextBox.TabIndex = 6;
             // 
-            // label4
+            // forLoopLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(77, 72);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 20);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "uitkomst";
+            this.forLoopLabel.AutoSize = true;
+            this.forLoopLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forLoopLabel.Location = new System.Drawing.Point(103, 89);
+            this.forLoopLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.forLoopLabel.Name = "forLoopLabel";
+            this.forLoopLabel.Size = new System.Drawing.Size(84, 25);
+            this.forLoopLabel.TabIndex = 13;
+            this.forLoopLabel.Text = "uitkomst";
             // 
-            // groupBox1
+            // forLoopGroupBox
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(12, 43);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(220, 174);
-            this.groupBox1.TabIndex = 16;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Method1";
+            this.forLoopGroupBox.Controls.Add(this.forLoopTextBox);
+            this.forLoopGroupBox.Controls.Add(this.forLoopButton);
+            this.forLoopGroupBox.Controls.Add(this.forLoopLabel);
+            this.forLoopGroupBox.Location = new System.Drawing.Point(16, 53);
+            this.forLoopGroupBox.Margin = new System.Windows.Forms.Padding(4);
+            this.forLoopGroupBox.Name = "forLoopGroupBox";
+            this.forLoopGroupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.forLoopGroupBox.Size = new System.Drawing.Size(293, 214);
+            this.forLoopGroupBox.TabIndex = 16;
+            this.forLoopGroupBox.TabStop = false;
+            this.forLoopGroupBox.Text = "for loop";
             // 
-            // groupBox2
+            // machtsverheffingGroupBox
             // 
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(238, 43);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(220, 174);
-            this.groupBox2.TabIndex = 17;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Method2";
+            this.machtsverheffingGroupBox.Controls.Add(this.machtsverheffingTextBox);
+            this.machtsverheffingGroupBox.Controls.Add(this.machtsverheffingButton);
+            this.machtsverheffingGroupBox.Controls.Add(this.machtsverheffingLabel);
+            this.machtsverheffingGroupBox.Location = new System.Drawing.Point(317, 53);
+            this.machtsverheffingGroupBox.Margin = new System.Windows.Forms.Padding(4);
+            this.machtsverheffingGroupBox.Name = "machtsverheffingGroupBox";
+            this.machtsverheffingGroupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.machtsverheffingGroupBox.Size = new System.Drawing.Size(293, 214);
+            this.machtsverheffingGroupBox.TabIndex = 17;
+            this.machtsverheffingGroupBox.TabStop = false;
+            this.machtsverheffingGroupBox.Text = "machtsverheffing";
             // 
-            // textBox2
+            // machtsverheffingTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(38, 32);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(151, 20);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.Text = "Vul hier het aantal schijven in";
+            this.machtsverheffingTextBox.Location = new System.Drawing.Point(51, 39);
+            this.machtsverheffingTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.machtsverheffingTextBox.Name = "machtsverheffingTextBox";
+            this.machtsverheffingTextBox.Size = new System.Drawing.Size(200, 22);
+            this.machtsverheffingTextBox.TabIndex = 6;
             // 
-            // button2
+            // machtsverheffingButton
             // 
-            this.button2.Location = new System.Drawing.Point(38, 113);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 39);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Bereken";
-            this.button2.UseVisualStyleBackColor = true;
+            this.machtsverheffingButton.Location = new System.Drawing.Point(51, 139);
+            this.machtsverheffingButton.Margin = new System.Windows.Forms.Padding(4);
+            this.machtsverheffingButton.Name = "machtsverheffingButton";
+            this.machtsverheffingButton.Size = new System.Drawing.Size(201, 48);
+            this.machtsverheffingButton.TabIndex = 0;
+            this.machtsverheffingButton.Text = "Bereken";
+            this.machtsverheffingButton.UseVisualStyleBackColor = true;
+            this.machtsverheffingButton.Click += new System.EventHandler(this.machtsverheffingButton_Click);
             // 
-            // label3
+            // machtsverheffingLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(80, 72);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 20);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "uitkomst";
+            this.machtsverheffingLabel.AutoSize = true;
+            this.machtsverheffingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.machtsverheffingLabel.Location = new System.Drawing.Point(107, 89);
+            this.machtsverheffingLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.machtsverheffingLabel.Name = "machtsverheffingLabel";
+            this.machtsverheffingLabel.Size = new System.Drawing.Size(84, 25);
+            this.machtsverheffingLabel.TabIndex = 13;
+            this.machtsverheffingLabel.Text = "uitkomst";
             // 
-            // groupBox3
+            // incursieGroupBox
             // 
-            this.groupBox3.Controls.Add(this.textBox3);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Location = new System.Drawing.Point(464, 43);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(220, 174);
-            this.groupBox3.TabIndex = 18;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Method3";
+            this.incursieGroupBox.Controls.Add(this.RecursieTextBox);
+            this.incursieGroupBox.Controls.Add(this.IncursieButton);
+            this.incursieGroupBox.Controls.Add(this.incursieLabel);
+            this.incursieGroupBox.Location = new System.Drawing.Point(619, 53);
+            this.incursieGroupBox.Margin = new System.Windows.Forms.Padding(4);
+            this.incursieGroupBox.Name = "incursieGroupBox";
+            this.incursieGroupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.incursieGroupBox.Size = new System.Drawing.Size(293, 214);
+            this.incursieGroupBox.TabIndex = 18;
+            this.incursieGroupBox.TabStop = false;
+            this.incursieGroupBox.Text = "incursie";
             // 
-            // textBox3
+            // RecursieTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(38, 32);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(151, 20);
-            this.textBox3.TabIndex = 6;
-            this.textBox3.Text = "Vul hier het aantal schijven in";
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.RecursieTextBox.Location = new System.Drawing.Point(51, 39);
+            this.RecursieTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.RecursieTextBox.Name = "RecursieTextBox";
+            this.RecursieTextBox.Size = new System.Drawing.Size(200, 22);
+            this.RecursieTextBox.TabIndex = 6;
             // 
-            // button3
+            // IncursieButton
             // 
-            this.button3.Location = new System.Drawing.Point(38, 113);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(151, 39);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Bereken";
-            this.button3.UseVisualStyleBackColor = true;
+            this.IncursieButton.Location = new System.Drawing.Point(51, 139);
+            this.IncursieButton.Margin = new System.Windows.Forms.Padding(4);
+            this.IncursieButton.Name = "IncursieButton";
+            this.IncursieButton.Size = new System.Drawing.Size(201, 48);
+            this.IncursieButton.TabIndex = 0;
+            this.IncursieButton.Text = "Bereken";
+            this.IncursieButton.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // incursieLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(80, 72);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 20);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "uitkomst";
+            this.incursieLabel.AutoSize = true;
+            this.incursieLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incursieLabel.Location = new System.Drawing.Point(107, 89);
+            this.incursieLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.incursieLabel.Name = "incursieLabel";
+            this.incursieLabel.Size = new System.Drawing.Size(84, 25);
+            this.incursieLabel.TabIndex = 13;
+            this.incursieLabel.Text = "uitkomst";
             // 
-            // Form1
+            // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(710, 258);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.ClientSize = new System.Drawing.Size(947, 318);
+            this.Controls.Add(this.incursieGroupBox);
+            this.Controls.Add(this.machtsverheffingGroupBox);
+            this.Controls.Add(this.forLoopGroupBox);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "MainForm";
             this.Text = "Torens van Hanoi";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.forLoopGroupBox.ResumeLayout(false);
+            this.forLoopGroupBox.PerformLayout();
+            this.machtsverheffingGroupBox.ResumeLayout(false);
+            this.machtsverheffingGroupBox.PerformLayout();
+            this.incursieGroupBox.ResumeLayout(false);
+            this.incursieGroupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button forLoopButton;
+        private System.Windows.Forms.TextBox forLoopTextBox;
+        private System.Windows.Forms.Label forLoopLabel;
+        private System.Windows.Forms.GroupBox forLoopGroupBox;
+        private System.Windows.Forms.GroupBox machtsverheffingGroupBox;
+        private System.Windows.Forms.TextBox machtsverheffingTextBox;
+        private System.Windows.Forms.Button machtsverheffingButton;
+        private System.Windows.Forms.Label machtsverheffingLabel;
+        private System.Windows.Forms.GroupBox incursieGroupBox;
+        private System.Windows.Forms.TextBox RecursieTextBox;
+        private System.Windows.Forms.Button IncursieButton;
+        private System.Windows.Forms.Label incursieLabel;
     }
 }
 

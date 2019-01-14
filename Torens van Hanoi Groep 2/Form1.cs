@@ -86,39 +86,54 @@ namespace Torens_van_Hanoi_Groep_2
 
         private void recursieButton_Click(object sender, EventArgs e)
         {
-            ulong discs;
-            bool gelukt = ulong.TryParse(RecursieTextBox.Text, out discs);
-            double seconden = double.Parse(RecursieTextBox.Text);
-            double input = double.Parse(RecursieTextBox.Text);
-
-            if (discs <= 64 && discs >= 1)
+            try
             {
-                if (!gelukt)
+                ulong discs;
+                bool gelukt = ulong.TryParse(RecursieTextBox.Text, out discs);
+                double seconden = double.Parse(RecursieTextBox.Text);
+                double input = double.Parse(RecursieTextBox.Text);
+
+                if (discs <= 64 && discs >= 1)
                 {
-                   
+                    if (!gelukt)
+                    {
+
+                    }
+                    else
+                    {
+                        ulong result = count(0, 1, discs);
+                        recursieLabel.Text = string.Format(" {1} ", discs, result);
+                        seconden = Math.Pow(2, input) - 1;
+                        ulong seconds = result % 60;
+
+                        ulong minutes = result / 60 % 60;
+
+                        ulong hours = result / 60 / 60 % 24;
+
+                        ulong days = result / 24 / 60 / 60 % 7;
+
+                        ulong weeks = result / 7 / 24 / 60 / 60 % 4;
+
+                        ulong months = result / 4 / 7 / 24 / 60 / 60 % 12;
+
+                        ulong years = result / 12 / 4 / 7 / 24 / 60 / 60 % 10;
+
+                        ulong decenia = result / 10 / 12 / 4 / 7 / 24 / 60 / 60 % 100;
+
+                        ulong centuries = result / 100 / 10 / 12 / 4 / 7 / 24 / 60 / 60;
+
+                        timeLabel.Text = centuries.ToString() + " eeuwen " + decenia.ToString() + " decenia " + years.ToString() + " jaren " + months.ToString() + " maanden " + weeks.ToString() + " weken " + days.ToString() + " dagen " + hours.ToString() + " uren " + minutes.ToString() + " minuten " + seconds.ToString() + " seconden ";
+                        RecursieTextBox.Clear();
+                    }
                 }
                 else
                 {
-                    ulong result = count(0, 1, discs);
-                    recursieLabel.Text = string.Format(" {1} ", discs, result);
-                    seconden = Math.Pow(2, input) - 1;
-                    ulong seconds = result % 60;
-                    ulong minutes = result / 60 % 60;
-                    ulong hours = result / 60 / 60 % 24;
-                    ulong days = result / 24 / 60 / 60 % 7;
-                    ulong weeks = result / 7 / 24 / 60 / 60 % 4;
-                    ulong months = result / 4 / 7 / 24 / 60 / 60 % 12;
-                    ulong years = result / 12 / 4 / 7 / 24 / 60 / 60 % 10;
-                    ulong decenia = result / 10 / 12 / 4 / 7 / 24 / 60 / 60 % 100;
-                    ulong centuries = result / 100 / 10 / 12 / 4 / 7 / 24 / 60 / 60;
-
-                    timeLabel.Text = centuries.ToString() + " eeuwen " + decenia.ToString() + " decenia " + years.ToString() + " jaren " + months.ToString() + " maanden " + weeks.ToString() + " weken " + days.ToString() + " dagen " + hours.ToString() + " uren " + minutes.ToString() + " minuten " + seconds.ToString() + " seconden ";
-                    RecursieTextBox.Clear();
+                    MessageBox.Show("Invoer Ongeldig");
                 }
             }
-            else
+            catch (FormatException)
             {
-                MessageBox.Show("Invoer Ongeldig");
+                MessageBox.Show("voer een getal in tussen de 1 en 64");
             }
 
         }
